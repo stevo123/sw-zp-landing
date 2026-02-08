@@ -381,7 +381,7 @@ export const HomeScreen = () => {
             >
                 <Modal className="h-full max-w-none">
                     <Dialog className="h-full">
-                        <div className="relative flex h-dvh min-h-dvh w-full items-center justify-center bg-primary-solid">
+                        <div className="relative h-dvh w-full bg-primary-solid">
                             <div className="absolute inset-0 bg-primary-solid" aria-hidden="true" />
                             <div
                                 className="absolute inset-0 bg-cover bg-center opacity-10"
@@ -394,72 +394,76 @@ export const HomeScreen = () => {
 
                             <CloseButton className="absolute right-6 top-6 z-20" size="md" theme="dark" slot="close" />
 
-                            <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
-                                <div className="flex w-full flex-col gap-6 text-primary_on-brand lg:max-w-[46%]">
-                                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary_on-brand">Book a demo</p>
-                                    <h2 className="text-balance text-display-sm font-bold text-primary_on-brand md:text-display-md">
-                                        Simplify your gym operations and maximize member engagement with Zen Planner
-                                    </h2>
-                                    <div className="flex flex-col gap-3 text-sm text-tertiary_on-brand">
-                                        <div className="flex items-start gap-3">
-                                            <span className="mt-0.5 flex size-5 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary_on-brand">
-                                                1
-                                            </span>
-                                            <p>Fill out the form for a quick response.</p>
+                            <div className="absolute inset-0 overflow-y-auto">
+                                <div className="flex min-h-full items-center justify-center px-4 py-10">
+                                    <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
+                                        <div className="flex w-full flex-col gap-6 text-primary_on-brand lg:max-w-[46%]">
+                                            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-secondary_on-brand">Book a demo</p>
+                                            <h2 className="text-balance text-display-sm font-bold text-primary_on-brand md:text-display-md">
+                                                Simplify your gym operations and maximize member engagement with Zen Planner
+                                            </h2>
+                                            <div className="flex flex-col gap-3 text-sm text-tertiary_on-brand">
+                                                <div className="flex items-start gap-3">
+                                                    <span className="mt-0.5 flex size-5 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary_on-brand">
+                                                        1
+                                                    </span>
+                                                    <p>Fill out the form for a quick response.</p>
+                                                </div>
+                                                <div className="flex items-start gap-3">
+                                                    <span className="mt-0.5 flex size-5 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary_on-brand">
+                                                        2
+                                                    </span>
+                                                    <p>Get a personalized demo to see the fit.</p>
+                                                </div>
+                                                <div className="flex items-start gap-3">
+                                                    <span className="mt-0.5 flex size-5 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary_on-brand">
+                                                        3
+                                                    </span>
+                                                    <p>Enjoy the benefits and watch your club grow.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="flex items-start gap-3">
-                                            <span className="mt-0.5 flex size-5 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary_on-brand">
-                                                2
-                                            </span>
-                                            <p>Get a personalized demo to see the fit.</p>
-                                        </div>
-                                        <div className="flex items-start gap-3">
-                                            <span className="mt-0.5 flex size-5 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary_on-brand">
-                                                3
-                                            </span>
-                                            <p>Enjoy the benefits and watch your club grow.</p>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div className="w-full max-w-md rounded-2xl bg-primary p-6 shadow-xl lg:max-w-[420px]">
-                                    <div className="flex flex-col gap-4">
-                                        <div className="grid gap-4 sm:grid-cols-2">
-                                            <Input label="First name" placeholder="First name" />
-                                            <Input label="Last name" placeholder="Last name" />
+                                        <div className="w-full max-w-md rounded-2xl bg-primary p-6 shadow-xl lg:max-w-[420px]">
+                                            <div className="flex flex-col gap-4">
+                                                <div className="grid gap-4 sm:grid-cols-2">
+                                                    <Input label="First name" placeholder="First name" />
+                                                    <Input label="Last name" placeholder="Last name" />
+                                                </div>
+                                                <Input label="Email" placeholder="you@company.com" type="email" />
+                                                <Input label="Company" placeholder="Company name" />
+                                                <Input label="Phone number" placeholder="+1 (555) 000-0000" type="tel" />
+                                                <Checkbox
+                                                    label="I agree to receive SMS text messages from ZenPlanner."
+                                                    hint={
+                                                        <span>
+                                                            Message and data rates may apply. Message frequency varies. Reply STOP to opt-out at any time.{" "}
+                                                            <a
+                                                                href="https://zenplanner.com/terms-of-use/"
+                                                                className="text-brand-secondary underline"
+                                                                target="_blank"
+                                                                rel="noreferrer"
+                                                            >
+                                                                Terms and Conditions
+                                                            </a>
+                                                            .{" "}
+                                                            <a
+                                                                href="https://www.daxko.com/privacy/"
+                                                                className="text-brand-secondary underline"
+                                                                target="_blank"
+                                                                rel="noreferrer"
+                                                            >
+                                                                Privacy Policy
+                                                            </a>
+                                                            .
+                                                        </span>
+                                                    }
+                                                />
+                                                <Button size="lg" color="brand-secondary" className="w-full">
+                                                    Demo the Integration
+                                                </Button>
+                                            </div>
                                         </div>
-                                        <Input label="Email" placeholder="you@company.com" type="email" />
-                                        <Input label="Company" placeholder="Company name" />
-                                        <Input label="Phone number" placeholder="+1 (555) 000-0000" type="tel" />
-                                        <Checkbox
-                                            label="I agree to receive SMS text messages from ZenPlanner."
-                                            hint={
-                                                <span>
-                                                    Message and data rates may apply. Message frequency varies. Reply STOP to opt-out at any time.{" "}
-                                                    <a
-                                                        href="https://zenplanner.com/terms-of-use/"
-                                                        className="text-brand-secondary underline"
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                    >
-                                                        Terms and Conditions
-                                                    </a>
-                                                    .{" "}
-                                                    <a
-                                                        href="https://www.daxko.com/privacy/"
-                                                        className="text-brand-secondary underline"
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                    >
-                                                        Privacy Policy
-                                                    </a>
-                                                    .
-                                                </span>
-                                            }
-                                        />
-                                        <Button size="lg" color="brand-secondary" className="w-full">
-                                            Demo the Integration
-                                        </Button>
                                     </div>
                                 </div>
                             </div>
