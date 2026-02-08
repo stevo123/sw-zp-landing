@@ -76,11 +76,11 @@ export const HomeScreen = () => {
                             </p>
                         </div>
 
-                        <div className="flex flex-wrap items-center gap-4">
-                            <Button size="lg" color="brand-secondary" iconTrailing={ArrowRight} onPress={openDemo}>
+                        <div className="flex w-full flex-wrap items-center gap-4">
+                            <Button size="lg" color="brand-secondary" iconTrailing={ArrowRight} onPress={openDemo} className="max-sm:w-full">
                                 Demo the integration
                             </Button>
-                            <Button size="lg" color="secondary-on-brand" onPress={scrollToHighlights} className="hover:bg-primary/10">
+                            <Button size="lg" color="secondary-on-brand" onPress={scrollToHighlights} className="max-sm:w-full hover:bg-primary/10">
                                 Learn more
                             </Button>
                         </div>
@@ -236,7 +236,7 @@ export const HomeScreen = () => {
                         </div>
                     </div>
 
-                    <Button size="lg" color="secondary-brand-outline" onPress={openDemo}>
+                    <Button size="lg" color="secondary-brand-outline" onPress={openDemo} className="max-sm:w-full">
                         Demo the integration
                     </Button>
                 </div>
@@ -286,7 +286,7 @@ export const HomeScreen = () => {
                         </div>
 
                         <div>
-                            <Button size="lg" color="secondary-on-brand" className="hover:bg-primary/10" onPress={playTestimonial}>
+                            <Button size="lg" color="secondary-on-brand" className="max-sm:w-full hover:bg-primary/10" onPress={playTestimonial}>
                                 Watch Testimonial
                             </Button>
                         </div>
@@ -356,7 +356,7 @@ export const HomeScreen = () => {
                             Simplify gym management and boost member engagement. Book your demo today!
                         </p>
                     </div>
-                    <Button size="lg" color="brand-secondary" onPress={openDemo}>
+                    <Button size="lg" color="brand-secondary" onPress={openDemo} className="max-sm:w-full">
                         Demo the Integration
                     </Button>
                 </div>
