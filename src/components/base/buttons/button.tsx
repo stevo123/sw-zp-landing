@@ -198,6 +198,16 @@ export interface CommonProps {
 export interface ButtonProps extends CommonProps, DetailedHTMLProps<Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color" | "slot">, HTMLButtonElement> {
     /** Slot name for react-aria component */
     slot?: AriaButtonProps["slot"];
+    /** Handler called when the button is pressed (React Aria press event) */
+    onPress?: AriaButtonProps["onPress"];
+    /** Handler called when a press interaction starts */
+    onPressStart?: AriaButtonProps["onPressStart"];
+    /** Handler called when a press interaction ends */
+    onPressEnd?: AriaButtonProps["onPressEnd"];
+    /** Handler called when the press state changes */
+    onPressChange?: AriaButtonProps["onPressChange"];
+    /** Handler called when a press is released over the button */
+    onPressUp?: AriaButtonProps["onPressUp"];
 }
 
 /**
