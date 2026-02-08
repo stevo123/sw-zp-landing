@@ -130,7 +130,7 @@ export const HomeScreen = () => {
 
                         <div className="flex flex-col gap-6">
                             <div className="flex gap-4">
-                                <CheckCircle className="mt-1 size-6 text-fg-brand-primary" aria-hidden="true" />
+                                <CheckCircle className="mt-1 size-7 shrink-0 text-fg-brand-primary md:size-6" aria-hidden="true" />
                                 <div className="flex flex-col gap-1">
                                     <p className="font-semibold text-primary">Easily Manage Classes and Reservations</p>
                                     <p className="text-base text-tertiary">
@@ -140,7 +140,7 @@ export const HomeScreen = () => {
                             </div>
 
                             <div className="flex gap-4">
-                                <CheckCircle className="mt-1 size-6 text-fg-brand-primary" aria-hidden="true" />
+                                <CheckCircle className="mt-1 size-7 shrink-0 text-fg-brand-primary md:size-6" aria-hidden="true" />
                                 <div className="flex flex-col gap-1">
                                     <p className="font-semibold text-primary">Streamlined Scheduling</p>
                                     <p className="text-base text-tertiary">
@@ -150,7 +150,7 @@ export const HomeScreen = () => {
                             </div>
 
                             <div className="flex gap-4">
-                                <CheckCircle className="mt-1 size-6 text-fg-brand-primary" aria-hidden="true" />
+                                <CheckCircle className="mt-1 size-7 shrink-0 text-fg-brand-primary md:size-6" aria-hidden="true" />
                                 <div className="flex flex-col gap-1">
                                     <p className="font-semibold text-primary">Boost Engagement with Personalized Experiences</p>
                                     <p className="text-base text-tertiary">
