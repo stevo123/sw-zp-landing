@@ -369,7 +369,7 @@ export const HomeScreen = () => {
                         <span className="text-sm text-tertiary_on-brand">+</span>
                         <img src="/images/content/logo-zp.svg" alt="Zen Planner" className="h-7 w-auto" />
                     </div>
-                    <p className="text-sm text-tertiary_on-brand">© Copyright All Rights Reserved 2024</p>
+                    <p className="text-sm text-white/80">© Copyright All Rights Reserved 2024</p>
                 </div>
             </footer>
 
