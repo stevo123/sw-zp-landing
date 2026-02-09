@@ -247,8 +247,8 @@ export const HomeScreen = () => {
                     <h2 className="text-balance text-center text-display-sm font-bold text-white md:text-display-md">
                         Success Stories from Gym Owners Like You
                     </h2>
-                    <div className="grid w-full gap-12 lg:grid-cols-[55%_45%] lg:items-center">
-                    <div className="w-full">
+                    <div className="grid w-full gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                    <div className="w-full min-w-0">
                         <div id="testimonial-video" className="relative aspect-video overflow-hidden rounded-2xl bg-primary shadow-lg">
                             {videoSrc ? (
                                 <iframe
@@ -267,7 +267,7 @@ export const HomeScreen = () => {
                         </div>
                     </div>
 
-                    <div className="flex w-full flex-col gap-6 lg:pl-6">
+                    <div className="flex w-full min-w-0 flex-col gap-6 lg:pl-6">
                         <div className="flex flex-col gap-4">
                             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-white">Featured</p>
                             <h3 className="text-balance text-display-xs font-bold text-white md:text-display-sm">
